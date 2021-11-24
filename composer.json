@@ -1,0 +1,26 @@
+{
+  "name": "rockschtar/database-and-file-backup",
+  "license": "MIT",
+  "require": {
+    "php": "^7.4",
+    "ext-zip" : "*",
+    "spatie/db-dumper": "2.*",
+    "nesbot/carbon": "2.*",
+    "google/cloud-storage": "v1.25.0",
+    "league/flysystem-sftp": "1.*",
+    "league/flysystem-webdav": "^1.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "^9"
+  },
+  "repositories": [
+
+  ],
+  "autoload": {
+    "psr-4": {
+      "ValidIO\\DatabaseAndFileBackup\\": "src/",
+      "ValidIO\\DatabaseAndFileBackup\\Tests\\": "tests/"
+    }
+  }
+}

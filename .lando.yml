@@ -1,0 +1,13 @@
+name: database-and-file-backup
+services:
+  phpcli:
+    type: php:7.4
+    via: cli
+    xdebug: true
+    composer_version: 2-latest
+    # Below only valid for via: cl
+tooling:
+  php:
+    service: phpcli
+  composer:
+    service: phpcli
